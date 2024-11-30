@@ -18,3 +18,7 @@
 - Copy `.env.example` to `.env`
   - Input information
 - `pnpm run dev`
+
+## Build
+
+- `pnpm run build`
