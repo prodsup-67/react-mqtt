@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import mqtt from "mqtt";
-const client = mqtt.connect("mqtt://10.10.12.140", {
-  port: 9001,
+import { MQTT_PORT, MQTT_URL } from "./env";
+
+const client = mqtt.connect(`mqtt://${MQTT_URL}`, {
+  port: MQTT_PORT,
 });
 
 interface DataArr {
