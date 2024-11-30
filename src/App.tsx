@@ -8,7 +8,7 @@ interface DataArr {
   timestamp: number;
 }
 
-const client = mqtt.connect(`mqtt://${MQTT_URL}`, {
+const client = mqtt.connect(`wss://${MQTT_URL}`, {
   port: MQTT_PORT,
 });
 
